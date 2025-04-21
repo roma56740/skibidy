@@ -13,6 +13,11 @@
     font-weight: 500;
 }
 
+.imgEl{
+    max-width: 550px;
+    min-width: 550px;
+}
+
 @font-face {
     font-family: 'Roboto-Medium';
     src: url(../fonts/Roboto-Medium.ttf);
