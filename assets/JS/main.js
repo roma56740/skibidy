@@ -73,3 +73,15 @@ for(let i = 0; i < btnsEl.length; i++){
         info.innerHTML = textEl[i]
     });
 };
+
+let eleelelel = document.getElementsByClassName('eleelelel')
+let btnReg = document.getElementsByClassName('btnReg')
+let modal = document.getElementsByClassName('modal')[0]
+
+for(let i = 0; i < btnsEl.length; i++){
+    btnReg[i].addEventListener('click', function(){
+        modal.classList.toggle('act');
+        eleelelel[0].innerHTML = this.innerHTML
+        eleelelel[1].innerHTML = this.innerHTML
+    })
+}
