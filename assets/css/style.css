@@ -473,3 +473,46 @@ footer{
     min-width: 420px;
     min-height: 420px;
 }
+
+.modal{
+    position: absolute;
+    left: 50%;top: 50%;
+    position: fixed;
+    width: 320px;
+    height: 400px;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: white;
+    z-index: 2222;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 15px grey;
+}
+
+.modal input{
+    width: 90%;
+    background-color: #181818;
+    border: none;
+    height: 40px;
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.modal button{
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #181818;
+    width: 90%;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.act{
+    display: flex;
+}
