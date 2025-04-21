@@ -42,3 +42,34 @@ setInterval(()=>{
 
 
 },1500);
+
+
+
+let btnsEl = document.getElementsByClassName('btnsEl');
+let imgElText = {
+    0:'assets/image/banner/banner.png',
+    1:'assets/image/block/image.png',
+    2:'assets/image/slide_1.png',
+    3:'assets/image/slide_2.png',
+    4:'assets/image/slide_3.png',
+};
+
+let textEl = {
+    0: "Hello hi hi hello lol just ideo and audio hi Hello !",
+    1: "Preview any media type, including video and audio.",
+    2: "Including video and audio, including video and audio.",
+    3: "Hello any media type, Preview any media type",
+    4: "Type, any media  including video and audio including video",
+}
+let imgEl = document.getElementsByClassName('imgEl')[0];
+
+let txt = document.getElementsByClassName('txt1')[0];
+let info = document.getElementsByClassName('info')[0];
+
+for(let i = 0; i < btnsEl.length; i++){
+    btnsEl[i].addEventListener('click', ()=>{
+        imgEl.src = imgElText[i]
+        txt.innerHTML = textEl[i]
+        info.innerHTML = textEl[i]
+    });
+};
